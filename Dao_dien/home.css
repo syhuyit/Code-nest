@@ -18,6 +18,7 @@ body {
 
 /* Tiêu đề */
 h1 {
+  font-family: Arial, Helvetica, sans-serif;
   color: #333;
 }
 
@@ -49,4 +50,19 @@ button {
 
 button:hover {
   background-color: #357ab8;
+}
+
+/* Bảng */
+.bang {
+  width: 100%;
+  border-collapse: collapse;
+}
+.bang th,
+.bang td {
+  border: 1px solid #333;
+  text-align: center;
+  padding: 8px 12px;
+}
+.bang thead {
+  background-color: rgb(85, 85, 244);
 }

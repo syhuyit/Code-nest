@@ -1,19 +1,26 @@
-// 1. Lấy form từ HTML
+// Lấy form đăng nhập
 const form = document.getElementById("loginForm");
 
-// 2. Gắn sự kiện submit cho form
+// Bắt sự kiện submit
 form.addEventListener("submit", function (event) {
-  // 3. Ngăn trình duyệt reload trang
+  // Ngăn form reload trang
   event.preventDefault();
 
-  // 4. Lấy dữ liệu người dùng nhập
+  // Lấy dữ liệu người dùng nhập
   const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
 
-  // 5. Kiểm tra tài khoản
-  if (username === "admin") {
-    localStorage.setItem("username", username);
-    window.location.href = "password.html";
+  // Tài khoản & mật khẩu mẫu
+  const correctUsername = "admin";
+  const correctPassword = "123456";
+
+  // Kiểm tra đăng nhập
+  if (username === correctUsername && password === correctPassword) {
+    alert("Đăng nhập thành công!");
+
+    // Chuyển sang trang home
+    window.location.href = "home.html";
   } else {
-    alert("Tài khoản không tồn tại!");
+    alert("Sai tài khoản hoặc mật khẩu!");
   }
 });
