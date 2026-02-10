@@ -1,0 +1,23 @@
+.question label {
+  display: block;
+  padding: 6px 10px;
+  margin: 4px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.correct {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.wrong {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.reset {
+  background-color: rgb(67, 67, 201);
+  color: #d4edda;
+  border-radius: 20px;
+}

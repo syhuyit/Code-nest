@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Dao_dien/menu.css" />
+    <link rel="stylesheet" href="../Dao_dien/quiz.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <img src="../img/logo.png" class="logo" />
+        <span class="brand">CodeNest</span>
+      </div>
+
+      <ul class="nav-menu">
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../knowledge/HTMLklg.html">HTML</a></li>
+        <li><a href="../knowledge/CSSklg.html">CSS</a></li>
+        <li><a href="../knowledge/JSklg.html">JS</a></li>
+        <li><a href="./bai-tap.html">Bài tập</a></li>
+        <li><a href="./quiz.html">Quizz</a></li>
+        <li><a href="./practice.html">Thực hành nhanh</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button class="logout">Đăng xuất</button>
+      </div>
+    </nav>
+    <main>
+      <form class="quiz-form">
+        <h1>Quiz</h1>
+        <h3>Chọn đáp án đúng</h3>
+        <hr />
+        <div class="quiz">
+          <div class="question">
+            <p>HTML là viết tắt của từ gì?</p>
+            <label>
+              <input type="radio" name="q1" data-correct="true" />
+              Hyper Text Markup Language </label
+            ><br />
+            <label>
+              <input type="radio" name="q1" />
+              Home Tool Markup Language </label
+            ><br />
+            <label>
+              <input type="radio" name="q1" />
+              Hyper Tool Markup Language </label
+            ><br />
+            <label>
+              <input type="radio" name="q1" />
+              Hyperlinks and Text Markup Language
+            </label>
+          </div>
+
+          <div class="question">
+            <p>CSS dùng để làm gì?</p>
+            <label>
+              <input type="radio" name="q2" data-correct="true" />
+              Tạo giao diện cho website </label
+            ><br />
+            <label>
+              <input type="radio" name="q2" />
+              Lập trình server </label
+            ><br />
+            <label>
+              <input type="radio" name="q2" />
+              Quản lý cơ sở dữ liệu
+            </label>
+          </div>
+        </div>
+        <button class="reset" type="reset">Làm lại</button>
+      </form>
+    </main>
+    <script src="../Chuc_nang/quiz.js"></script>
+  </body>
+</html>
