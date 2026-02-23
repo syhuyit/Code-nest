@@ -1,26 +1,28 @@
-// Lấy form đăng nhập
-const form = document.getElementById("loginForm");
-
-// Bắt sự kiện submit
-form.addEventListener("submit", function (event) {
-  // Ngăn form reload trang
-  event.preventDefault();
-
-  // Lấy dữ liệu người dùng nhập
-  const username = document.getElementById("username").value;
-  const password = document.getElementById("password").value;
-
-  // Tài khoản & mật khẩu mẫu
-  const correctUsername = "admin";
-  const correctPassword = "123456";
-
-  // Kiểm tra đăng nhập
-  if (username === correctUsername && password === correctPassword) {
-    alert("Đăng nhập thành công!");
-
-    // Chuyển sang trang home
+document.addEventListener("DOMContentLoaded", function () {
+  // Nếu đã login rồi → chuyển sang home
+  const existingUser = localStorage.getItem("username");
+  if (existingUser) {
     window.location.href = "home.html";
-  } else {
-    alert("Sai tài khoản hoặc mật khẩu!");
+    return;
   }
+
+  const form = document.getElementById("loginForm");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value.trim();
+
+    // Tài khoản giả lập
+    const correctUser = "admin";
+    const correctPass = "123456";
+
+    if (username === correctUser && password === correctPass) {
+      localStorage.setItem("username", username);
+      window.location.href = "home.html";
+    } else {
+      alert("Sai tài khoản hoặc mật khẩu");
+    }
+  });
 });

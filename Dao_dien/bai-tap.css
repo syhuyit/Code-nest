@@ -1,0 +1,28 @@
+table {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+.baitap {
+  text-decoration: none;
+}
+/* :hover tác dụng khi du chuột qua  */
+.baitap:hover {
+  color: chocolate;
+}
+/* :link tác dụng khi người dùng chưa click vào link */
+.baitap:link {
+  color: blue;
+}
+/* :visited tác dụng khi người dùng đã click */
+.baitap:visited {
+  color: red;
+}
+/* :empty tác dụng khi thẻ ở trạng thái trống */
+/* :target tác dụng khi click vào link nhảy đoạn */

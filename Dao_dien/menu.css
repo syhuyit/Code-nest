@@ -1,23 +1,26 @@
+/* toàn bộ thanh menu */
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: flex; /* bật flexbox */
+  align-items: center; /* căn giữa theo chiều dọc */
+  justify-content: space-between; /* trái - phải cách xa nhau */
 
-  padding: 10px 20px;
-  background-color: #000000;
-  border-bottom: 1px solid #ddd;
+  padding: 10px 20px; /* khoảng cách trong */
+  background-color: #000000; /* nền đen */
+  border-bottom: 1px solid #ddd; /* viền dưới */
 }
+
+/* logo và brand */
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 10px; /* khoảng cách giữa logo và chữ */
 }
 
 .logo {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
+  border-radius: 50%; /* bo tròn thành hình tròn */
+  object-fit: cover; /* ảnh không méo */
   border: 2px solid #ddd;
 }
 
@@ -26,27 +29,51 @@
   font-size: 18px;
   font-weight: bold;
 }
+
+/* danh sách link - biến ul thành menu ngang */
 .nav-menu {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+  list-style: none; /* bỏ chấm đầu dòng */
+  display: flex; /* nằm ngang */
+  gap: 20px; /* khoảng cách giữa các link */
   margin: 0;
   padding: 0;
 }
 
 .nav-menu a {
-  text-decoration: none;
+  text-decoration: none; /* bỏ gạch chân mặc định */
   color: #ececec;
   font-size: 15px;
   padding: 6px 10px;
   border-radius: 4px;
   transition: 0.2s;
+  position: relative; /* làm mốc cho ::after */
 }
 
 .nav-menu a:hover {
   background-color: #eae7e7;
   color: rgb(0, 0, 0);
 }
+/* hiện dấu gạch dưới khi active */
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0; /* ban đầu không có chiều rộng */
+  height: 2px;
+  background-color: #ffffff;
+  transition: 0.3s;
+}
+/* khi di chuột tới cũng hiện gạch */
+.nav-menu a:hover::after {
+  width: 100%;
+}
+/* luôn hiện gạch ở trang hiện tại */
+.nav-menu a.active::after {
+  width: 100%;
+}
+
+/* nút đăng xuất */
 .logout {
   color: #ddd;
   padding: 6px 12px;
