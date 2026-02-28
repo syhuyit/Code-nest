@@ -1,6 +1,6 @@
 table {
   text-align: center;
-  width: 70%;
+  width: 95%;
   margin: auto;
   border-collapse: collapse;
 }
@@ -12,7 +12,10 @@ td {
 .baitap {
   text-decoration: none;
 }
-/* :hover tác dụng khi du chuột qua  */
+th {
+  background-color: blue;
+}
+/* :hover tác dụng khi di chuột qua  */
 .baitap:hover {
   color: chocolate;
 }

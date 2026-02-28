@@ -17,7 +17,15 @@
 }
 
 .reset {
-  background-color: rgb(67, 67, 201);
+  background-color: rgb(239, 2, 30);
   color: #d4edda;
   border-radius: 20px;
+}
+
+.question p:nth-child(1) {
+  font-size: 20px;
+  background-color: aqua;
+}
+.answer:hover {
+  color: rgb(244, 244, 28);
 }
