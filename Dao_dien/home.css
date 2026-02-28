@@ -1,3 +1,17 @@
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 24px;
+}
+p {
+  font-size: 18px;
+}
+ul {
+  font-size: 18px;
+}
+
+/* infor */
 .infor {
   text-decoration: none;
 }

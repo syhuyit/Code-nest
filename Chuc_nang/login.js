@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (username === correctUser && password === correctPass) {
       localStorage.setItem("username", username);
-      window.location.href = "home.html";
+      window.location.href = "index.html";
     } else {
       alert("Sai tài khoản hoặc mật khẩu");
     }
