@@ -48,6 +48,10 @@
   transition: 0.2s;
   position: relative; /* làm mốc cho ::after */
 }
+.games {
+  color: #000000;
+  background-color: rgb(0, 242, 255);
+}
 
 .nav-menu a:hover {
   background-color: #eae7e7;

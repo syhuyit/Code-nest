@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  height: 100vh;
+
+  background: linear-gradient(270deg, #ff00cc, #3333ff, #00ffee, #ff9900);
+
+  background-size: 600% 600%;
+
+  animation: gradientMove 40s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.page-title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 70px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.game-card {
+  transition: 0.3s;
+  border-radius: 20px;
+}
+.game-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.game-img {
+  height: 180px;
+  object-fit: cover;
+}
+.card-body {
+  text-align: center;
+}
