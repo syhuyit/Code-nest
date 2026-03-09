@@ -50,7 +50,10 @@
 }
 .games {
   color: #000000;
-  background-color: rgb(0, 242, 255);
+  background-color: rgb(145, 202, 205);
+  border-radius: 5px;
+  display: inline-block;
+  padding: 3px 0px;
 }
 
 .nav-menu a:hover {
@@ -68,10 +71,12 @@
   background-color: #ffffff;
   transition: 0.3s;
 }
+
 /* khi di chuột tới cũng hiện gạch */
 .nav-menu a:hover::after {
   width: 100%;
 }
+
 /* luôn hiện gạch ở trang hiện tại */
 .nav-menu a.active::after {
   width: 100%;
@@ -89,6 +94,7 @@
   transition: 0.2s;
 }
 
+/* hiệu ứng rainbow khi hover */
 .logout:hover {
   background-color: #f70000;
   color: rgb(0, 0, 0);
