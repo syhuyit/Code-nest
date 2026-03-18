@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Nếu chưa login → về index
   if (!username) {
-    window.location.href = new URL("../index.html", window.location.href).href;
+    window.location.href = "/index.html";
     return;
   }
 
@@ -18,10 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (logoutBtn) {
     logoutBtn.addEventListener("click", function () {
       localStorage.removeItem("username");
-      window.location.href = new URL(
-        "../index.html",
-        window.location.href,
-      ).href;
+      window.location.href = "/index.html";
     });
   }
 });
